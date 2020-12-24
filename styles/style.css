@@ -1,5 +1,59 @@
+*,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
 
 
+.container {
+    margin: 55px 60px;
+}
+
+.slider-image-container {
+    position: relative;
+}
+
+.slider-image-container > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slider-image-container::before {
+    content: url(../images/icon-prev.svg);
+    position: absolute;
+    top:90%;
+    left: 32%;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 20px;
+    width: 20px;
+    padding: 10px 10px 10px 12px;
+}
+
+.slider-image-container::after {
+    content: url(../images/icon-next.svg);
+    position: absolute;
+    top:90%;
+    right: 35%;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 20px;
+    width: 20px;
+    padding: 10px 12px 10px 10px ;
+
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
