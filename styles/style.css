@@ -24,6 +24,7 @@ body {
 .slider-image-container {
     position: relative;
     margin-bottom: 40px;
+    padding: 30px;
 }
 
 .slider-image-container > img {
@@ -34,7 +35,7 @@ body {
 .slider-image-container::before {
     content: url(../images/icon-prev.svg);
     position: absolute;
-    top:93%;
+    top:83%;
     left: 38%;
     background-color: #fff;
     border-top-left-radius: 20px;
@@ -48,7 +49,7 @@ body {
 .slider-image-container::after {
     content: url(../images/icon-next.svg);
     position: absolute;
-    top:93%;
+    top:83%;
     right: 38%;
     background-color: #fff;
     border-top-right-radius: 20px;
