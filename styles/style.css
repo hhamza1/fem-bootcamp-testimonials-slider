@@ -9,6 +9,10 @@ h6{
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     box-sizing: border-box;
     color: hsl(240, 38%, 20%);
@@ -54,34 +58,29 @@ body {
     border-radius: 10px;
 }
 
-.slider-image-container::before {
-    content: url(../images/icon-prev.svg);
+.btn-container {
     position: absolute;
-    top:83%;
-    left: 38%;
     background-color: #fff;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.slider-image-container::after {
-    content: url(../images/icon-next.svg);
-    position: absolute;
-    top: 83%;
-    right: 38%;
-    background-color: #fff;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 22px;
     text-align: center;
     font-weight: bold;
     padding: 10px;
-
     cursor: pointer;
-
+    bottom: 0;
+    left: 35%;
 }
+
+#prev {
+    padding-right: 15px;
+    width: 10px;
+    height: 12px;
+}
+#next {
+    padding-left: 15px;
+    width: 10px;
+    height: 12px;
+}
+
 
 .testimonial {
     text-align: center;
