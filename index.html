@@ -13,38 +13,50 @@
   <body>
   
     <div class="container">
-
-      <div class="slider-image-container">
-        <img src="images/image-tanya.jpg" alt="Tanya Sinclair">
-        <di class="btn-container">
-          <a href="#">
-            <img src="images/icon-prev.svg" class="btn" id="prev" />
-          </a>
-          <a href="#">
-            <img src="images/icon-next.svg" class="btn" id="next" />
-          </a>
-        </di>
-        
+      <div class="slides fade">
+        <div class="slider-image-container">
+          <img src="images/image-tanya.jpg" alt="Tanya Sinclair">
+          <di class="btn-container">
+            <a href="#" onClick="plusSlides(1)">
+              <img src="images/icon-prev.svg" class="btn" id="prev" />
+            </a>
+            <a href="#" onClick="plusSlides(-1)">
+              <img src="images/icon-next.svg" class="btn" id="next" />
+            </a>
+          </di>        
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-paragraph">
+            “ I’ve been interested in coding for a while but never taken the jump, until now. 
+            I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+            excited about the future. ”
+          </p>
+          <h5>Tanya Sinclair</h5>
+          <span>UX Engineer</span>
+        </div>
       </div>
-
-
-      <div class="testimonial">
-        <p class="testimonial-paragraph">
-          “ I’ve been interested in coding for a while but never taken the jump, until now. 
-          I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-          excited about the future. ”
-        </p>
-        <h5>Tanya Sinclair</h5>
-        <span>UX Engineer</span>
+      <div class="slides fade">
+        <div class="slider-image-container">
+          <img src="images/image-john.jpg" alt="John Tarkpor">
+          <di class="btn-container">
+            <a href="#" onClick="plusSlides(-1)">
+              <img src="images/icon-prev.svg" class="btn" id="prev" />
+            </a>
+            <a href="#" onClick="plusSlides(1)">
+              <img src="images/icon-next.svg" class="btn" id="next" />
+            </a>
+          </di>        
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-paragraph">
+              " If you want to lay the best foundation possible I’d recommend taking this course. 
+            The depth the instructors go into is incredible. I now feel so confident about 
+            starting up as a professional developer. ”
+          </p>
+          <h5>John Tarkpor</h5>
+          <span>Junior Front-end Developer</span>
+        </div>
       </div>
-    
-      <!-- “ If you want to lay the best foundation possible I’d recommend taking this course. 
-      The depth the instructors go into is incredible. I now feel so confident about 
-      starting up as a professional developer. ”
-    
-      John Tarkpor
-      Junior Front-end Developer -->
-
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/hhamza1">Hamza HMITOU</a>.
