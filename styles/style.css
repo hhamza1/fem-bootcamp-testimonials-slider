@@ -124,3 +124,25 @@ body {
         opacity: 1;
     }
 }
+
+
+/*---------------------  Desktop view ---------------*/
+
+@media (min-width: 1024px) {
+    .slides{
+        display: grid;
+        direction: rtl;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .testimonial-paragraph {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .slider-image-container {
+        padding: 65px;
+        padding-bottom: 65px;
+    }
+}
