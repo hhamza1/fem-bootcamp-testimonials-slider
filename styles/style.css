@@ -76,12 +76,12 @@ body {
     left: 35%;
 }
 
-#prev {
+.prev {
     padding-right: 15px;
     width: 10px;
     height: 12px;
 }
-#next {
+.next {
     padding-left: 15px;
     width: 10px;
     height: 12px;
