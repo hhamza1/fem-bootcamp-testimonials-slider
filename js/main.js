@@ -1,6 +1,8 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
+console.log(window.innerWidth);
+
 
 function plusSlides(n) {
     showSlides(slideIndex += n)
@@ -10,7 +12,6 @@ function plusSlides(n) {
 function showSlides(n){
     var i;
     var slides = document.getElementsByClassName("slides");
-    console.log(slides);
     if(n > slides.length) {
         slideIndex = 1
     }
@@ -21,5 +22,5 @@ function showSlides(n){
     for(i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.display = "grid";
 }
