@@ -1,5 +1,8 @@
 var slideIndex = 1;
+
 showSlides(slideIndex);
+
+document.onkeydown = checkKey;
 
 
 function plusSlides(n) {
@@ -21,4 +24,17 @@ function showSlides(n){
         slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "grid";
+}
+
+function checkKey(e) {
+    e = e || window.event;
+    if(e.keyCode == '37'){
+        plusSlides(1)
+    }
+    else if(e.keyCode == '39'){
+        plusSlides(-1)
+    }
+    else {
+        return ;
+    }
 }
