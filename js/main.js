@@ -1,8 +1,6 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
-console.log(window.innerWidth);
-
 
 function plusSlides(n) {
     showSlides(slideIndex += n)
